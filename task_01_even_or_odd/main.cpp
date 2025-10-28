@@ -1,16 +1,19 @@
 
 #include <iostream>
+using namespace std;
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-    long long n;
+    int n;
+    cout << "Zadaj cislo " << endl;
+    cin >> n;
+    cout << "in: " << n << endl;
 
-    std::cout << "Nacitaj cislo";
+    if (n % 2 == 0) {
+        cout << "out: even" << endl;
+    }
 
-    std::cin >> n;
-
-    if (!(n))
-        return 0;
+    else {
+        cout << "out: odd" << endl;
+    }
 
     return 0;
 }
