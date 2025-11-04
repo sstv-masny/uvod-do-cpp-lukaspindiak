@@ -1,10 +1,16 @@
-
 #include <iostream>
+using namespace std;
+
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(nullptr);
-    long long n;
-    if (!(std::cin >> n)) return 0;
-    // TODO: compute sum 1..n (watch overflow; use 64-bit)
+    int n, sum = 0;
+    cout << "Zadaj cislo" << endl;
+    cin >> n;
+    cout << "in: " << n << endl;
+
+    for (int i = 1; i <= n; i++) {
+        sum = sum + i;
+    }
+
+    cout << "out: " << sum;
     return 0;
 }
