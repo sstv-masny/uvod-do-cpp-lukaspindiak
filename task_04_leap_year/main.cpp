@@ -7,7 +7,7 @@ int main() {
     cin >> year;
     cout << "in: " << year << endl;
 
-    if ((year / 400 == 0) || (year / 4 == 0 && year / 100 != 0))
+    if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))
         cout << "out: YES";
     else
         cout << "out: NO";
